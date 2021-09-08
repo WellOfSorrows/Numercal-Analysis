@@ -10,12 +10,12 @@ def gaussian_elimination_partial_pivoting(dimensions, matrix: np.array):
 
     #   Elimination
     for i in range(n-1):
+        maximum = 0
+        for j in range(i, n):
+            temp = abs(a[i][j])
+            if temp > maximum:
+                maximum = temp
         for p in range(i, n, 1):
-            maximum = 0
-            for j in range(i, n):
-                temp = abs(a[i][j])
-                if temp > maximum:
-                    maximum = temp
             if a[n_row[p]][i] == maximum:
                 break
 

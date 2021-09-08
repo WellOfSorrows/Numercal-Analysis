@@ -24,12 +24,12 @@ def gaussian_elimination_partial_pivoting_scaled(dimensions, matrix: np.array):
 
     #   Elimination
     for i in range(n-1):
+        maximum = 0
+        for j in range(i, n):
+            temp = abs(a[n_row[j]][i] / s[n_row[j]])
+            if temp > maximum:
+                maximum = temp
         for p in range(i, n, 1):
-            maximum = 0
-            for j in range(i, n, 1):
-                temp = abs(a[n_row[j]][i]) / (s[n_row[j]])
-                if temp > maximum:
-                    maximum = temp
             if abs(a[n_row[p]][i]) / s[n_row[p]] == maximum:
                 break
 
@@ -64,10 +64,11 @@ def main():
                        [4.01, 10.2, -1.12, -3.09],
                        [1.09, 0.987, 0.832, 4.21]])
 
+    dimensions = 2
+    matrix = np.array([[30, 591400, 591700], [5.291, -6.13, 46.78]])
     res = gaussian_elimination_partial_pivoting_scaled(dimensions, matrix)
-    print(res[0], res[1], res[2])
+    print(res[0], res[1])
 
 
 if __name__ == '__main__':
     main()
-

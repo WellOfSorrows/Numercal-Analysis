@@ -22,4 +22,3 @@ def bisection_method(function, left_endpoint, right_endpoint,
 
     print("Max number of iterations exceeded.")
     return None
-
