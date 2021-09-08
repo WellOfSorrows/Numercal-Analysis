@@ -1,5 +1,5 @@
-def fixed_point_iteration(function, initial_approximation,
-                          tolerance=10**(-5), max_iterations=1000):
+def fixed_point_iteration_method(function, initial_approximation,
+                                 tolerance=10**(-5), max_iterations=1000):
     g = function
     p_0 = initial_approximation
     tol = tolerance
