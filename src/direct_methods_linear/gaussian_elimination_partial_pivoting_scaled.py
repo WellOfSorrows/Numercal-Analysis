@@ -57,18 +57,18 @@ def gaussian_elimination_partial_pivoting_scaled(dimensions, matrix: np.array):
         x[i] = (a[n_row[i]][n] - sum_of) / a[n_row[i]][i]
     return x
 
-
-def main():
-    dimensions = 3
-    matrix = np.array([[2.11, -4.21, 0.921, 2.01],
-                       [4.01, 10.2, -1.12, -3.09],
-                       [1.09, 0.987, 0.832, 4.21]])
-
-    dimensions = 2
-    matrix = np.array([[30, 591400, 591700], [5.291, -6.13, 46.78]])
-    res = gaussian_elimination_partial_pivoting_scaled(dimensions, matrix)
-    print(res[0], res[1])
-
-
-if __name__ == '__main__':
-    main()
+#
+# def main():
+#     dimensions = 3
+#     matrix = np.array([[2.11, -4.21, 0.921, 2.01],
+#                        [4.01, 10.2, -1.12, -3.09],
+#                        [1.09, 0.987, 0.832, 4.21]])
+#
+#     dimensions = 2
+#     matrix = np.array([[30, 591400, 591700], [5.291, -6.13, 46.78]])
+#     res = gaussian_elimination_partial_pivoting_scaled(dimensions, matrix)
+#     print(res[0], res[1])
+#
+#
+# if __name__ == '__main__':
+#     main()

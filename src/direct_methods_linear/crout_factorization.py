@@ -29,16 +29,16 @@ def crout_factorization(dimensions, matrix: np.array):
 
     return x
 
-
-def main():
-    n = 4
-    a = np.array([[2, -1, 0, 0, 1],
-                  [-1, 2, -1, 0, 0],
-                  [0, -1, 2, -1, 0],
-                  [0, 0, -1, 2, 1]])
-    result = crout_factorization(n, a)
-    print(result)
-
-
-if __name__ == '__main__':
-    main()
+#
+# def main():
+#     n = 4
+#     a = np.array([[2, -1, 0, 0, 1],
+#                   [-1, 2, -1, 0, 0],
+#                   [0, -1, 2, -1, 0],
+#                   [0, 0, -1, 2, 1]])
+#     result = crout_factorization(n, a)
+#     print(result)
+#
+#
+# if __name__ == '__main__':
+#     main()

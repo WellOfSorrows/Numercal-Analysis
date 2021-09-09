@@ -36,19 +36,19 @@ def sor(dimensions, matrix: np.array, ans_vector: np.array, initial_guess: np.ar
     print("Max number of iterations exceeded.")
     return None
 
-
-def main():
-    n = 3
-    mat = np.array([[4, 3, 0],
-                    [3, 4, -1],
-                    [0, -1, 4]])
-
-    ans = np.array([24, 30, -24])
-    init = np.ones(n)
-
-    result = sor(n, mat, ans, init, 1.25)
-    print(result)
-
-
-if __name__ == '__main__':
-    main()
+#
+# def main():
+#     n = 3
+#     mat = np.array([[4, 3, 0],
+#                     [3, 4, -1],
+#                     [0, -1, 4]])
+#
+#     ans = np.array([24, 30, -24])
+#     init = np.ones(n)
+#
+#     result = sor(n, mat, ans, init, 1.25)
+#     print(result)
+#
+#
+# if __name__ == '__main__':
+#     main()
