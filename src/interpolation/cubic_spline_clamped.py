@@ -56,19 +56,3 @@ def cubic_spline_clamped(number_of_splines, x_values: np.array, y_values: np.arr
         d[i] = (c[i + 1] - c[i]) / (3 * h[i])
 
     return a, b, c, d
-
-
-def main():
-    n = 3
-    x = np.array([0, 1, 2, 3])
-    y = np.array([1, e, e ** 2, e ** 3])
-    result = cubic_spline_clamped(n, x, y, 1, e**3)
-
-    for i in range(n):
-        for j in range(4):
-            print(result[j][i], end=' ')
-        print()
-
-
-if __name__ == '__main__':
-    main()

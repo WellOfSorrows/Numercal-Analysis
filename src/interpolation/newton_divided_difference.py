@@ -23,14 +23,3 @@ def newton_divided_difference(x_points: np.array, y_points: np.array):
             v[i][j] = (v[i][j-1] - v[i-1][j-1]) / (x[i] - x[i-j])
 
     return v
-
-
-def main():
-    x = np.array([1, 1.3, 1.6, 1.9, 2.2])
-    y = np.array([0.7651977, 0.6200860, 0.4554022, 0.2818186, 0.1103623])
-    result = newton_divided_difference(x, y)
-    print(result)
-
-
-if __name__ == '__main__':
-    main()
