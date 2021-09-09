@@ -2,12 +2,12 @@ import numpy as np
 
 
 def bezier_curve(number,
-                 x_points: np.array, y_points: np.array,
+                 points: np.array,
                  x_left_guide_points: np.array, y_left_guide_points: np.array,
                  x_right_guide_points: np.array, y_right_guide_points: np.array):
     n = number
-    x = x_points
-    y = y_points
+    x = np.array([points[i][0] for i in range(n+1)])
+    y = np.array([points[i][1] for i in range(n+1)])
 
     x_plus = np.zeros(n + 1)
     for i in range(n):
@@ -42,7 +42,7 @@ def bezier_curve(number,
 
 def main():
     n = 4
-    x = np.array([3, 2, 6, 5, 6.5])
+    x = np.array([(3,6), (2,2,) 6, 5, 6.5])
     y = np.array([6, 2, 6, 2, 3])
     x_plus = np.array([3.3, 2.8, 5.8, 5.5])
     y_plus = np.array([6.5, 3, 5, 2.2])

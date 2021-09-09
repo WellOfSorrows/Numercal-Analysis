@@ -3,6 +3,10 @@ from math import e
 
 
 def cubic_spline_natural(number_of_splines, x_values: np.array, y_values: np.array):
+    """
+    :return: The natural cubic spline coefficients.
+    """
+
     n = number_of_splines
     x = x_values
     a = y_values

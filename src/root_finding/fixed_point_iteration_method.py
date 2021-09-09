@@ -13,8 +13,8 @@ def fixed_point_iteration_method(function, initial_approximation,
         p = g(p_0)
         if abs(p - p_0) < tol:
             return p
-        i += 1
         p_0 = p
+        i += 1
 
     print("Max number of iterations exceeded.")
     return None

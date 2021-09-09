@@ -2,6 +2,10 @@ import numpy as np
 
 
 def hermite_interpolation(x_points: np.array, y_points: np.array, dy_points: np.array):
+    """
+    :return: The hermite coefficients.
+    """
+
     x = x_points
     y = y_points
     dy = dy_points

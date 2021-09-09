@@ -2,6 +2,10 @@ import numpy as np
 
 
 def neville_iterated_interpolation(point_to_eval, x_values: np.array, y_values: np.array):
+    """
+    :return: The complete interpolation table.
+    """
+
     z = point_to_eval
     x = x_values
     y = y_values

@@ -2,6 +2,10 @@ import numpy as np
 
 
 def newton_divided_difference(x_points: np.array, y_points: np.array):
+    """
+    :return: The complete interpolation table.
+    """
+
     x = x_points
     y = y_points
 

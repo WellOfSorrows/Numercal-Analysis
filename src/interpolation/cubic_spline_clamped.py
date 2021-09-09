@@ -4,6 +4,10 @@ from math import e
 
 def cubic_spline_clamped(number_of_splines, x_values: np.array, y_values: np.array,
                          left_endpoint_derivative, right_endpoint_derivative):
+    """
+    :return: The clamped cubic spline coefficients.
+    """
+
     n = number_of_splines
     x = x_values
     a = y_values
