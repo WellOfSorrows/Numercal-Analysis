@@ -38,4 +38,3 @@ def gaussian_elimination_backward_substitution(dimensions, matrix: np.array):
             sum_of += a[i][j] * x[j]
         x[i] = (a[i][n] - sum_of) / a[i][i]
     return x
-

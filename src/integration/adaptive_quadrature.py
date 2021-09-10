@@ -1,5 +1,3 @@
-from math import sin
-
 import numpy as np
 
 
@@ -76,16 +74,3 @@ def adaptive_quadrature(function, left_endpoint, right_endpoint,
             m[i] = m[i-1]
 
     return app
-
-
-def g(x):
-    return (100 / (x**2)) * sin(10 / x)
-
-
-def main():
-    result = adaptive_quadrature(g, 1, 3, 10**(-4))
-    print(result)
-
-
-if __name__ == '__main__':
-    main()

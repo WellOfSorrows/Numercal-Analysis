@@ -42,15 +42,3 @@ def gaussian_elimination_partial_pivoting(dimensions, matrix: np.array):
             sum_of += a[n_row[i]][j] * x[j]
         x[i] = (a[n_row[i]][n] - sum_of) / a[n_row[i]][i]
     return x
-
-#
-# def main():
-#     dimensions = 2
-#     matrix = np.array([[30, 591400, 591700], [5.291, -6.13, 46.78]])
-#     res = gaussian_elimination_partial_pivoting(dimensions, matrix)
-#     print(res[1])
-#
-#
-# if __name__ == '__main__':
-#     main()
-#

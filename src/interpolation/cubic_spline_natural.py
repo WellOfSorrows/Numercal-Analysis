@@ -1,5 +1,4 @@
 import numpy as np
-from math import e
 
 
 def cubic_spline_natural(number_of_splines, x_values: np.array, y_values: np.array):

@@ -1,8 +1,7 @@
-from math import sin, pi
 import numpy as np
 
 
-def com_simpson(function, left_endpoint, right_endpoint, length=8):
+def composite_simpson_rule(function, left_endpoint, right_endpoint, length=8):
     f = function
     a = left_endpoint
     b = right_endpoint
@@ -20,16 +19,3 @@ def com_simpson(function, left_endpoint, right_endpoint, length=8):
 
     s = (h / 3) * (xi[0] + 4 * xi[1] + 2 * xi[2])
     return s
-
-
-def g(x):
-    return x**2
-
-
-def main():
-    res = com_simpson(g, 0, 3.5)
-    print("The approximated value of the integral using Simpson's rule is: {res}".format(res=res))
-
-
-if __name__ == '__main__':
-    main()

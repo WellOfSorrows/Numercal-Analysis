@@ -26,17 +26,3 @@ def romberg_integration(function, left_endpoint, right_endpoint, number):
             r[0][j] = r[1][j]
 
     return r[1][n-1]
-
-
-def g(x):
-    return (e**(3*x)) * sin(2*x)
-
-
-def main():
-    n = 10
-    res = romberg_integration(g, 0, pi/4, n)
-    print(res)
-
-
-if __name__ == '__main__':
-    main()
