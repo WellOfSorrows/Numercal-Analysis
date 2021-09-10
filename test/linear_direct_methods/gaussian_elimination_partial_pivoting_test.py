@@ -1,5 +1,5 @@
 import numpy as np
-from src.direct_methods_linear.gaussian_elimination_partial_pivoting import gaussian_elimination_partial_pivoting
+from src.linear_direct_methods.gaussian_elimination_partial_pivoting import gaussian_elimination_partial_pivoting
 
 
 def main():

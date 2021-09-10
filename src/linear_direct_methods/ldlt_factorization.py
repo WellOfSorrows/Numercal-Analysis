@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def ldl_factorization(dimensions, matrix: np.array):
+def ldlt_factorization(dimensions, matrix: np.array):
     """This piece of code assumes that the lower matrix has the diagonal of identity matrix"""
 
     n = dimensions

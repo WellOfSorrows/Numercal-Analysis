@@ -1,5 +1,5 @@
 import numpy as np
-from src.direct_methods_linear.cholesky_factorization import cholesky_factorization
+from src.linear_direct_methods.cholesky_factorization import cholesky_factorization
 
 
 def main():

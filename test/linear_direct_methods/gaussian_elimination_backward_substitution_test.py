@@ -1,5 +1,5 @@
 import numpy as np
-from src.direct_methods_linear.gaussian_elimination_backward_substitution import \
+from src.linear_direct_methods.gaussian_elimination_backward_substitution import \
     gaussian_elimination_backward_substitution
 
 

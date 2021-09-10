@@ -35,19 +35,3 @@ def gauss_seidel_iterative_method(dimensions, matrix: np.array, ans_vector: np.a
     print("Max number of iterations exceeded.")
     return None
 
-#
-# def main():
-#     n = 4
-#     mat = np.array([[10, -1, 2, 0],
-#                     [-1, 11, -1, 3],
-#                     [2, -1, 10, -1],
-#                     [0, 3, -1, 8]])
-#     ans = np.array([6, 25, -11, 15])
-#     init = np.zeros(n)
-#
-#     result = gauss_seidel_iterative_method(n, mat, ans, init)
-#     print(result)
-#
-#
-# if __name__ == '__main__':
-#     main()

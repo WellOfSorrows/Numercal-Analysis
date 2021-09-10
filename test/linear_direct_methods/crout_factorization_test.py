@@ -1,5 +1,5 @@
 import numpy as np
-from src.direct_methods_linear.crout_factorization import crout_factorization
+from src.linear_direct_methods.crout_factorization import crout_factorization
 
 
 def main():
